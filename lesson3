@@ -1,0 +1,24 @@
+import math
+
+class Triangle:
+    def __init__(self,x1,y1,x2,y2,x3,y3):
+        self.x1 = int(x1)
+        self.y1 = int(y1)
+        self.x2 = int(x2)
+        self.y2 = int(y2)
+        self.x3 = int(x3)
+        self.y3 = int(y3)
+
+    def Answer(self):
+        self.a = math.sqrt((self.x1 - self.x2) ** 2 + (self.y1 - self.y2) ** 2)
+        self.b = math.sqrt((self.x1 - self.x2) ** 2 + (self.y1 - self.y2) ** 2)
+        self.c = math.sqrt((self.x1 - self.x2) ** 2 + (self.y1 - self.y2) ** 2)
+
+        self.answer = self.a + self.b + self.c
+        return self.answer
+
+tri = Triangle(input("Введите x1: "),input("Введите y1: "),input("Введите x2: "),input("Введите y2: "),input("Введите x3: "),input("Введите y3: "))
+print(tri.Answer())
+
+# строка - вход/синапсис
+# столбец - сам нейрон

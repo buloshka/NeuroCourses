@@ -21,8 +21,8 @@ class Triangle:
         return self.perimetr
         
     def Ploshad(self):
-    	self.ans = self.answer/2
-    	self.ploshad =  math.sqrt(self.ans*(self.ans - self.a)*(self.ans - self.b)*(self.ans - self.c))
+    	self.per = self.perimetr/2
+    	self.ploshad =  math.sqrt(self.per*(self.per - self.a)*(self.per - self.b)*(self.per - self.c))
     	
     	return self.ploshad
 

@@ -13,20 +13,16 @@ class Triangle:
         self.z3 = int(z3)
 
     def Perimetr(self):
-        self.a = math.sqrt((self.x1 - self.x2) ** 2 + (self.y1 - self.y2) ** 2)
-        self.b = math.sqrt((self.x2 - self.x3) ** 2 + (self.y2 - self.y3) ** 2)
-        self.c = math.sqrt((self.x3 - self.x1) ** 2 + (self.y3 - self.y1) ** 2)
-
-        self.aa = math.sqrt((self.a)**2 + (self.z1 - self.z2)**2)
-        self.bb = math.sqrt((self.b)**2 + (self.z2 - self.z3)**2)
-        self.cc = math.sqrt((self.c)**2 + (self.z3 - self.z1)**2)
+        self.a = math.sqrt((math.sqrt((self.x1 - self.x2) ** 2 + (self.y1 - self.y2) ** 2))**2 + (self.z1 - self.z2)**2)
+        self.b = math.sqrt((math.sqrt((self.x2 - self.x3) ** 2 + (self.y2 - self.y3) ** 2))**2 + (self.z2 - self.z3)**2)
+        self.c = math.sqrt((math.sqrt((self.x3 - self.x1) ** 2 + (self.y3 - self.y1) ** 2))**2 + (self.z3 - self.z1)**2)
         
-        self.answer = self.aa + self.bb + self.cc
+        self.answer = self.a + self.b + self.c
         return self.answer
         
     def Ploshad(self):
     	self.ans = self.answer/2
-    	self.ploshad =  math.sqrt(self.ans*(self.ans - self.aa)*(self.ans - self.bb)*(self.ans - self.cc))
+    	self.ploshad =  math.sqrt(self.ans*(self.ans - self.a)*(self.ans - self.b)*(self.ans - self.c))
     	
     	return self.ploshad
 

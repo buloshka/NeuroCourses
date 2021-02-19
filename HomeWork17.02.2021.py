@@ -17,8 +17,8 @@ class Triangle:
         self.b = math.sqrt((math.sqrt((self.x2 - self.x3) ** 2 + (self.y2 - self.y3) ** 2))**2 + (self.z2 - self.z3)**2)
         self.c = math.sqrt((math.sqrt((self.x3 - self.x1) ** 2 + (self.y3 - self.y1) ** 2))**2 + (self.z3 - self.z1)**2)
         
-        self.answer = self.a + self.b + self.c
-        return self.answer
+        self.perimetr = self.a + self.b + self.c
+        return self.perimetr
         
     def Ploshad(self):
     	self.ans = self.answer/2

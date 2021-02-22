@@ -26,5 +26,5 @@ class Triangle:
     	return self.ploshad
 
 tri = Triangle(input("Введите x1: "),input("Введите y1: "),input("Введите z1: "),input("Введите x2: "),input("Введите y2: "),input("Введите z2: "),input("Введите x3: "),input("Введите y3: "),input("Введите z3: "))
-print(tri.Perimetr())
-print(tri.Ploshad())
+print("Периметр треугольника: ",tri.Perimetr())
+print("Площадь треугольника: ",tri.Ploshad())
